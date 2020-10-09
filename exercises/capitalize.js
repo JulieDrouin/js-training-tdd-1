@@ -8,7 +8,14 @@
  */
 
 // Your code:
-
+function capitalize(str) {
+    for (let index = 0; index < str.length; index++) {
+        const element = str[index];
+        if(element[0] >=1) {
+            str1erecapitaliaz
+        }
+    }
+}
 //* Begin of tests
 const assert = require('assert');
 
