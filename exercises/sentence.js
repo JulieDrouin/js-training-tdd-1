@@ -8,6 +8,15 @@
 
 // Your code:
 
+function sentence(arr) {
+    let tab = []
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index]
+        tab.push(element)
+    }
+    return tab.join(' ')
+}
+
 //* Begin of tests
 const assert = require('assert');
 

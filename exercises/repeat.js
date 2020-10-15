@@ -9,6 +9,14 @@
 
 // Your code:
 
+function repeat(str,num) {
+    let tab = []
+    for (let index = 0; index < num; index++) {
+        tab.push(str)
+    }
+    return tab.join('')
+}
+
 //* Begin of tests
 const assert = require('assert');
 

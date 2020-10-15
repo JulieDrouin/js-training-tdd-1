@@ -12,7 +12,7 @@ function add( arg1, arg2) {
     console.log(res)
     return res;
 }
-console.log(add());
+// console.log(add());
 
 //* Begin of tests
 const assert = require('assert');

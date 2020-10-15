@@ -12,8 +12,23 @@
 
 // Your code:
 
+function cutFirst(str) {
+    return str.substring(2)
+}
+function cutLast(str) {
+    return str.substring(0,str.length-2)
+}
+function cutFirstLast(str) {
+    return str.substring(2,str.length-2)
+}
+
+// console.log(cutFirst('cutFirst'))
+// console.log(cutLast('cutLast'))
+// console.log(cutFirstLast('cutFirstLast'))
 //* Begin of tests
 const assert = require('assert');
-
-assert.fail('You must write your own tests');
+assert.strictEqual(cutFirst('cutFirst'), "tFirst");
+assert.strictEqual(cutLast('cutLast'), "cutLa");
+assert.strictEqual(cutFirstLast('cutFirstLast'), "tFirstLa");
+// assert.fail('You must write your own tests');
 // End of tests */

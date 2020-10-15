@@ -8,6 +8,15 @@
 
 // Your code:
 
+function total(arr) {
+    let res = 0
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        res += element
+    }
+    return res
+}
+
 //* Begin of tests
 const assert = require('assert');
 

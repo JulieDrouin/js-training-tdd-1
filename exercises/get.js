@@ -17,6 +17,15 @@ const sourceObject = {
 
 // Your code:
 
+function get(key) {
+  if(key === 'noexist') {
+    return undefined
+  }
+    if(key !== 'noexist') {
+    return sourceObject[key]
+  }
+}
+
 //* Begin of tests
 const assert = require('assert');
 

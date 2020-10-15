@@ -8,6 +8,14 @@
  */
 
 // Your code:
+function getLast(arr) {
+    if(arr === []) {
+        return undefined
+    }
+    if(arr) {
+        return arr[arr.length-1]
+    }
+}
 
 //* Begin of tests
 const assert = require('assert');

@@ -11,6 +11,19 @@
 
 // Your code:
 
+function multiply(num1, num2) {
+    let a = Math.abs(num1);
+    let b = Math.abs(num2);
+
+    if( a === 0 || b === 0) {
+        return 0;
+    }
+    let result =  a + multiply(a, b - 1);
+    return (num1 < 0  && num2 > 0) || (num1 > 0 && num2 < 0)
+        ? -result
+        : result
+}
+
 //* Begin of tests
 const assert = require('assert');
 

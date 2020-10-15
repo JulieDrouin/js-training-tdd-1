@@ -11,21 +11,15 @@
 
 // Your code:
 function abs( arg1) {
-    if(arg1 <= 0) {
-        const finish = []
-        const res = toString(arg1)
-        console.log(res)
-        for (let index = 0; index < res.length; index++) {
-            const element = res[index];
-            if(element !== '-') {
-                finish.push(element)
-            }
-            
-        }
-        return finish.join('');
+    if(arg1 < 0) {
+        return arg1 *(-1)
+    }
+    if( arg1 >= 0) {
+        return arg1
     }
 }
-console.log(abs(12));
+
+
 //* Begin of tests
 const assert = require('assert');
 
