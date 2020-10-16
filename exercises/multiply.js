@@ -10,26 +10,27 @@
 
 // Your code:
 
-function multiply(num1, num2) {
-    // let res = 0
-    // if(num2 < 0) { 
-    //     for (let index = 0; index > num2; index--) {
-    //         res -=num1
-    //     }
-    //     return res
-    // }
-    // for (let index = 0; index < num2; index++) {
-    //     res +=num1
-    // }
-    // return res
-    let result = 0;
-    for (let index = 0; index < Math.abs(num2); index++) {
-        result += Math.abs(num1);        
-    }
+// let result = 0;
+//     for (let index = 0; index < Math.abs(num2); index++) {
+//         result += Math.abs(num1);        
+//     }
 
-    return (num1 < 0  && num2 > 0) || (num1 > 0 && num2 < 0) 
-        ? -result 
-        : result;
+//     return (num1 < 0  && num2 > 0) || (num1 > 0 && num2 < 0) 
+//         ? -result 
+//         : result;
+
+function multiply(num1, num2) {
+    let res = 0
+    if(num2 < 0) { 
+        for (let index = 0; index > num2; index--) {
+            res -=num1
+        }
+        return res
+    }
+    for (let index = 0; index < num2; index++) {
+        res +=num1
+    }
+    return res
 }
 //* Begin of tests
 const assert = require('assert');

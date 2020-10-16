@@ -9,7 +9,6 @@
 // Your code:
 function add( arg1, arg2) {
     const res = arg1+arg2
-    console.log(res)
     return res;
 }
 // console.log(add());
